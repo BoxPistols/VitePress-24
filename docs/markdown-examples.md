@@ -6,21 +6,7 @@ This page demonstrates some of the built-in markdown extensions provided by Vite
 
 VitePress provides Syntax Highlighting powered by [Shikiji](https://github.com/antfu/shikiji), with additional features like line-highlighting:
 
-**Input**
-
-````md
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
-````
-
-**Output**
+### Input
 
 ```js{4}
 export default {
@@ -32,9 +18,21 @@ export default {
 }
 ```
 
-## Custom Containers
+### Output
 
-**Input**
+```js{4}
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!'
+    }
+  }
+}
+```
+
+### Custom Containers
+
+Input
 
 ```md
 ::: info

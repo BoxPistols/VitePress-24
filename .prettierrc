@@ -1,0 +1,29 @@
+{
+    "overrides": [
+        {
+            "files": [
+                "*.md",
+                "./**/*.md",
+                "README"
+            ],
+            "options": {
+                "parser": "markdown-nocjsp",
+                "proseWrap": "always",
+                "printWidth": 80,
+                "tabWidth": 2,
+                "useTabs": false,
+                "semi": false,
+                "singleQuote": false,
+                "trailingComma": "none",
+                "bracketSpacing": true,
+                "jsxBracketSameLine": false
+            }
+        },
+        {
+            "files": "*.mdx",
+            "options": {
+                "parser": "mdx-nocjsp"
+            }
+        }
+    ]
+}

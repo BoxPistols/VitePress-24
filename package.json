@@ -3,8 +3,23 @@
     "vitepress": "^1.0.0-rc.36"
   },
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
-  }
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "prettier": "prettier --write \"**/*.md\""
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-md-nocjsp"
+    ]
+  },
+  "dependencies": {
+    "prettier": "^3.2.2",
+    "prettier-plugin-md-nocjsp": "^1.5.1"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
