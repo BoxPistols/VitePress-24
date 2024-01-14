@@ -1,4 +1,5 @@
 {
+  "license": "MIT",
   "devDependencies": {
     "vitepress": "^1.0.0-rc.36"
   },
@@ -6,7 +7,8 @@
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
-    "prettier": "prettier --write \"**/*.md\""
+    "prettier": "prettier --write \"./**/*.md\"",
+    "lint": "markdownlint \"./**/*.md\" --ignore node_modules --ignore docs/.vitepress --ignore docs/.vitepress/dist"
   },
   "prettier": {
     "plugins": [
@@ -14,6 +16,7 @@
     ]
   },
   "dependencies": {
+    "markdownlint": "^0.33.0",
     "prettier": "^3.2.2",
     "prettier-plugin-md-nocjsp": "^1.5.1"
   },

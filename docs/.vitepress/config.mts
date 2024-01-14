@@ -38,4 +38,11 @@ export default defineConfig({
       { icon: "github", link: "https://github.com/vuejs/vitepress" },
     ],
   },
+  // https://vitepress.dev/guide/markdown#image-lazy-loading
+  markdown: {
+    image: {
+      // image lazy loading is disabled by default
+      lazyLoading: true,
+    },
+  },
 });

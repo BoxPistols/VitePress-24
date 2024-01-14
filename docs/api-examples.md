@@ -5,8 +5,8 @@ outline: deep
 # Runtime API Examples
 
 This page demonstrates usage of some of the runtime APIs provided by VitePress.
-
-The main `useData()` API can be used to access site, theme, and page data for the current page. It works in both `.md` and `.vue` files:
+The main `useData()` API can be used to access site, theme, and page data.
+for the current page. It works in both `.md` and `.vue` files:
 
 ```md
 <script setup>
@@ -30,25 +30,44 @@ const { theme, page, frontmatter } = useData()
 <pre>{{ frontmatter }}</pre>
 ```
 
-<script setup>
-import { useData } from 'vitepress'
+```js
+import {
+    useData
+} from 'vitepress'
 
-const { site, theme, page, frontmatter } = useData()
-</script>
+const {
+    site,
+    theme,
+    page,
+    frontmatter
+} = useData()
 
-## Results
+# # Results
 
-### Theme Data
+# # # Theme Data
 
-<pre>{{ theme }}</pre>
+{
+    {
+        theme
+    }
+}
 
-### Page Data
+# # # Page Data
 
-<pre>{{ page }}</pre>
+{
+    {
+        page
+    }
+}
 
-### Page Frontmatter
+# # # Page Frontmatter
 
-<pre>{{ frontmatter }}</pre>
+{
+    {
+        frontmatter
+    }
+}
+```
 
 ## More
 
